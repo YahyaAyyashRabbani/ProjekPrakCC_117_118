@@ -1,0 +1,83 @@
+###
+GET http://localhost:5000/review
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjIsInVzZXJuYW1lIjoiYXlhczEyMyIsImlhdCI6MTc0ODAxMzg5NywiZXhwIjoxNzQ4MDE0Nzk3fQ.gIRX33vOkPXx8Wpse5It5wN5LYtcKxcHfAAQ1f9PZXM
+
+###
+GET http://localhost:5000/anime/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjIsInVzZXJuYW1lIjoiYXlhczEyMyIsImlhdCI6MTc0ODAxMzg5NywiZXhwIjoxNzQ4MDE0Nzk3fQ.gIRX33vOkPXx8Wpse5It5wN5LYtcKxcHfAAQ1f9PZXM
+
+###
+POST http://localhost:5000/add-anime
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjIsInVzZXJuYW1lIjoiYXlhczEyMyIsImlhdCI6MTc0ODAxNTI3MywiZXhwIjoxNzQ4MDE2MTczfQ.6GzWPjB7lTCpRTqmwuj7y0LZLN_8plr-8vOZAZD6G34
+Content-Type: application/json
+
+{
+  "title": "ayas",
+  "description": "123456",
+  "genre": "123456",
+  "year": "2022",
+  "img_URL": "asdad"
+}
+
+###
+PUT http://localhost:5000/update-anime/44
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjIsInVzZXJuYW1lIjoiYXlhczEyMyIsImlhdCI6MTc0ODAxNTI3MywiZXhwIjoxNzQ4MDE2MTczfQ.6GzWPjB7lTCpRTqmwuj7y0LZLN_8plr-8vOZAZD6G34
+Content-Type: application/json
+
+{
+  "title": "ayas",
+  "description": "123456",
+  "genre": "123456",
+  "year": "2022",
+  "img_URL": "asdaa"
+}
+
+###
+DELETE http://localhost:5000/delete-anime/43
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjIsInVzZXJuYW1lIjoiYXlhczEyMyIsImlhdCI6MTc0ODAxNTI3MywiZXhwIjoxNzQ4MDE2MTczfQ.6GzWPjB7lTCpRTqmwuj7y0LZLN_8plr-8vOZAZD6G34
+Content-Type: application/json
+
+###
+POST http://localhost:5000/add-review
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjIsInVzZXJuYW1lIjoiYXlhczEyMyIsImlhdCI6MTc0ODAxNzE0MiwiZXhwIjoxNzQ4MDE4MDQyfQ.mS0AEptJMTrwbH4sTAQ5mHPepuB4k_QiDRwfLTYCKPI
+Content-Type: application/json
+
+{
+  "rating": 5,
+  "comment": "nskaoshib asjkaskshasbba sasas"
+}
+
+###
+PUT http://localhost:5000/update-review/9
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjIsInVzZXJuYW1lIjoiYXlhczEyMyIsImlhdCI6MTc0ODAxNzE0MiwiZXhwIjoxNzQ4MDE4MDQyfQ.mS0AEptJMTrwbH4sTAQ5mHPepuB4k_QiDRwfLTYCKPI
+Content-Type: application/json
+
+{
+  "rating": 5,
+  "comment": "nskaoshib asjkaskshasbba sasas"
+}
+
+###
+DELETE http://localhost:5000/delete-review/10
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjIsInVzZXJuYW1lIjoiYXlhczEyMyIsImlhdCI6MTc0ODAxNjIxMCwiZXhwIjoxNzQ4MDE3MTEwfQ.9S2ECUz-L2nWKJnvQTNX5b7tQDjnpFmYi9fVXfVQOSs
+Content-Type: application/json
+
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+  "username": "ayas",
+  "password": "123",
+  "confirm_password": "123"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "username": "ayas123",
+  "password": "123456"
+  
+}
