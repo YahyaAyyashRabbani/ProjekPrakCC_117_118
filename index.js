@@ -10,7 +10,7 @@ const port = process.env.PORT || 5000;
 // Konfigurasi CORS (sesuai domain frontend yang kamu punya)
 const corsOptions = {
   origin: [
-    "",
+    "https://projek-117-118-dot-f-09-451908.uc.r.appspot.com",
     "http://localhost:3000",
   ],
   credentials: true, // Mengizinkan cookie dikirim
